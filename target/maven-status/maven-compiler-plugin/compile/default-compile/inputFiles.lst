@@ -1,0 +1,15 @@
+/Users/ivanmendozabaca/Documents/repos/loki-v2-rest/src/main/java/com/loki/lokiv2/model/LoginRequest.java
+/Users/ivanmendozabaca/Documents/repos/loki-v2-rest/src/main/java/com/loki/lokiv2/model/RegisterRequest.java
+/Users/ivanmendozabaca/Documents/repos/loki-v2-rest/src/main/java/com/loki/lokiv2/filter/CustomAuthenticationFilter.java
+/Users/ivanmendozabaca/Documents/repos/loki-v2-rest/src/main/java/com/loki/lokiv2/model/dto/UserDto.java
+/Users/ivanmendozabaca/Documents/repos/loki-v2-rest/src/main/java/com/loki/lokiv2/filter/CustomAuthorizationFilter.java
+/Users/ivanmendozabaca/Documents/repos/loki-v2-rest/src/main/java/com/loki/lokiv2/service/UserService.java
+/Users/ivanmendozabaca/Documents/repos/loki-v2-rest/src/main/java/com/loki/lokiv2/Lokiv2Application.java
+/Users/ivanmendozabaca/Documents/repos/loki-v2-rest/src/main/java/com/loki/lokiv2/model/AbstractSimpleEntity.java
+/Users/ivanmendozabaca/Documents/repos/loki-v2-rest/src/main/java/com/loki/lokiv2/model/AbstractModificationAttributesEntity.java
+/Users/ivanmendozabaca/Documents/repos/loki-v2-rest/src/main/java/com/loki/lokiv2/repository/UserRepository.java
+/Users/ivanmendozabaca/Documents/repos/loki-v2-rest/src/main/java/com/loki/lokiv2/controller/AuthController.java
+/Users/ivanmendozabaca/Documents/repos/loki-v2-rest/src/main/java/com/loki/lokiv2/model/User.java
+/Users/ivanmendozabaca/Documents/repos/loki-v2-rest/src/main/java/com/loki/lokiv2/util/UserUtil.java
+/Users/ivanmendozabaca/Documents/repos/loki-v2-rest/src/main/java/com/loki/lokiv2/service/AuthService.java
+/Users/ivanmendozabaca/Documents/repos/loki-v2-rest/src/main/java/com/loki/lokiv2/controller/ClientController.java

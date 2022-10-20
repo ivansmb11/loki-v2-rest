@@ -1,0 +1,15 @@
+com/loki/lokiv2/model/RegisterRequest.class
+com/loki/lokiv2/model/AbstractSimpleEntity.class
+com/loki/lokiv2/service/UserService.class
+com/loki/lokiv2/filter/CustomAuthorizationFilter.class
+com/loki/lokiv2/filter/CustomAuthenticationFilter.class
+com/loki/lokiv2/model/User.class
+com/loki/lokiv2/Lokiv2Application.class
+com/loki/lokiv2/model/AbstractModificationAttributesEntity.class
+com/loki/lokiv2/model/dto/UserDto.class
+com/loki/lokiv2/service/AuthService.class
+com/loki/lokiv2/controller/AuthController.class
+com/loki/lokiv2/repository/UserRepository.class
+com/loki/lokiv2/util/UserUtil.class
+com/loki/lokiv2/controller/ClientController.class
+com/loki/lokiv2/model/LoginRequest.class
