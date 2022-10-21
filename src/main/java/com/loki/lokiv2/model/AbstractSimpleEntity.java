@@ -4,9 +4,10 @@ import java.util.UUID;
 
 import javax.persistence.Column;
 import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.MappedSuperclass;
+
+import org.hibernate.annotations.GenericGenerator;
 
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -17,8 +18,12 @@ import lombok.Setter;
 @NoArgsConstructor
 @MappedSuperclass
 public abstract class AbstractSimpleEntity {
-  @Id  
-  @GeneratedValue(strategy = GenerationType.IDENTITY)
+  @Id
+  @GeneratedValue(generator="uuid")
+  @GenericGenerator(
+    name="uuid",
+    strategy="org.hibernate.id.UUIDGenerator"
+  )
   @Column(
     name="id",
     updatable=false,
