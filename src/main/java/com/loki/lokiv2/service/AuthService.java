@@ -1,5 +1,6 @@
 package com.loki.lokiv2.service;
 
+import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Optional;
@@ -66,6 +67,9 @@ public class AuthService implements UserDetailsService {
     }
     User user = new User();
     BeanUtils.copyProperties(request, user);
+    user.setCreatedDate(LocalDate.now());
+    user.setCreatedBy("admin");
+    user.setUpdatedDate(LocalDate.now());
     user.setActive(true);
     user.setPassword(passwordEncoder.encode(request.getPassword()));
     return userRepository.save(user);
