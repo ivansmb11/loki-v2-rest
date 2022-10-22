@@ -43,6 +43,6 @@ public class ClientController {
 
   @PutMapping()
   public ResponseEntity<Client> updateClient(@RequestBody() ClientDto clientDto) throws ResponseStatusException {
-    return new ResponseEntity<>(clientService.createClient(clientDto), HttpStatus.OK);
+    return new ResponseEntity<>(clientService.updateClient(clientDto), HttpStatus.OK);
   }
 }
