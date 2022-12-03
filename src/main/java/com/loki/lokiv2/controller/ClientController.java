@@ -9,7 +9,6 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.server.ResponseStatusException;
 
@@ -36,9 +35,9 @@ public class ClientController {
     return new ResponseEntity<>(clientRepository.findAll(), HttpStatus.OK);
   }
 
-  @PostMapping("/{:id}")
-  public ResponseEntity<Client> createClient(@RequestBody() ClientDto clientDto, @RequestParam String id) throws ResponseStatusException {
-    return new ResponseEntity<>(clientService.createClient(clientDto, id), HttpStatus.CREATED);
+  @PostMapping()
+  public ResponseEntity<Client> createClient(@RequestBody() ClientDto clientDto) throws ResponseStatusException {
+    return new ResponseEntity<>(clientService.createClient(clientDto), HttpStatus.CREATED);
   }
 
   @PutMapping()

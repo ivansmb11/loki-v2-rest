@@ -1,6 +1,7 @@
 com/loki/lokiv2/model/RegisterRequest.class
 com/loki/lokiv2/model/AbstractSimpleEntity.class
 com/loki/lokiv2/service/UserService.class
+com/loki/lokiv2/model/Property.class
 com/loki/lokiv2/filter/CustomAuthorizationFilter.class
 com/loki/lokiv2/filter/CustomAuthenticationFilter.class
 com/loki/lokiv2/model/User.class

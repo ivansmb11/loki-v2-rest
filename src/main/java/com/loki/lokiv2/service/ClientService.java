@@ -19,17 +19,18 @@ public class ClientService {
     this.clientRepository = clientRepository;
   }
 
-  public Client createClient(ClientDto clientDto, String id) {
-    var client = clientRepository.findByEmail(clientDto.getEmail());
-    if (client.isPresent()) {
+  public Client createClient(ClientDto clientDto) {
+    var clientPresent = clientRepository.findByEmail(clientDto.getEmail());
+    if (clientPresent.isPresent()) {
       throw new RuntimeException("Client already exists");
     }
-    BeanUtils.copyProperties(clientDto, client.get());
-    client.get().setCreatedDate(LocalDate.now());
-    client.get().setCreatedBy(id);
-    client.get().setUpdatedDate(LocalDate.now());
-    client.get().setUpdatedBy(id);
-    return clientRepository.save(client.get());
+    var client = new Client();
+    BeanUtils.copyProperties(clientDto, client);
+    client.setCreatedDate(LocalDate.now());
+    client.setCreatedBy(clientDto.getId());
+    client.setUpdatedDate(LocalDate.now());
+    client.setUpdatedBy(clientDto.getId());
+    return clientRepository.save(client);
   }
 
   public Client updateClient(ClientDto clientDto) {
